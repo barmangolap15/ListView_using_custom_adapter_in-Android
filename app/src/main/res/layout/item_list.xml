@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="15dp"
+    android:gravity="center"
+    android:padding="5dp"
+    android:background="@drawable/camera_ripple"
+    android:orientation="horizontal"
+    android:elevation="5dp">
+
+    <ImageView
+        android:id="@+id/listview_images"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="7dp"
+        android:transitionName="imageTransition"
+        android:src="@drawable/apple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="titleTransition" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Description"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:transitionName="descTransition" />
+    </LinearLayout>
+
+</LinearLayout>
